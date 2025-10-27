@@ -143,9 +143,83 @@ Last change:    00/00/00
 			}
 		});
 	}
-
 	updateServiceItemPositions();
-
 	window.addEventListener('resize', updateServiceItemPositions);
+
+
+	if (window.matchMedia("(min-width: 1200px)").matches) { 
+		var SerItem = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.lg-service-item',
+				start: "top 100%",
+				end: "top -20%",
+				scrub: 1,
+				markers: false,
+			}
+
+		});
+		SerItem
+		.from( ".lg-service-item:nth-child(1) .inner-item" , {  y: -100,  opacity: 0,  duration: 1, transformOrigin: "top", ease: "power2.out"})
+		.from( ".lg-service-item:nth-child(2) .inner-item" , {  y: -150, x: -132, opacity: 0,  duration: 1, transformOrigin: "top", ease: "power2.out"})
+		.from( ".lg-service-item:nth-child(3) .inner-item" , {  y: -150, x: -132, opacity: 0,  duration: 1, transformOrigin: "top", ease: "power2.out"})
+		.from( ".lg-service-item:nth-child(4) .inner-item" , {  y: -150, x: -132, opacity: 0,  duration: 1, transformOrigin: "top", ease: "power2.out"})
+		.from( ".lg-service-item:nth-child(5) .inner-item" , {  y: -150, x: -132, opacity: 0,  duration: 1, transformOrigin: "top", ease: "power2.out"})
+	};
+
+
+
+	if (window.matchMedia("(min-width: 1200px)").matches) {
+		const serials = gsap.utils.toArray(".lg-serial");
+
+		var ATWORKPROCESS = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.lg-cs-serial-wrap',
+				start: "top 6%",
+				end: "bottom 60%",
+				endTrigger: ".lg-case-study-sec",
+				scrub: 1,
+				pin: true,
+				pinSpacing: false,
+				markers: false,
+			}
+		});
+
+		ATWORKPROCESS.from(serials, {
+			ease: "power2.out",
+			stagger: 0.3, 
+			onStart: function() {
+				serials.forEach((el, i) => el.classList.remove("active")); 
+			},
+			onUpdate: function() {
+				const progressIndex = Math.floor(ATWORKPROCESS.progress() * serials.length);
+				serials.forEach((el, i) => {
+					if (i === progressIndex) {
+						el.classList.add("active");
+					} else {
+						el.classList.remove("active");
+					}
+				});
+			}
+		});
+
+		const CaseStudy = gsap.utils.toArray(".lg-cs-item");
+		const animateCard = (card, wrapper, index) => {
+			gsap.to(card, {
+				scrollTrigger: {
+					trigger: wrapper,
+					scrub: 1,
+					start: `top ${50 + 45 * index}`, 
+					endTrigger: ".lg-cs-content",
+					end: "bottom 85%",
+					pin: wrapper,
+					pinSpacing: false,
+					markers: false,
+				},
+			});
+		};
+		CaseStudy.forEach((wrapper, index) => animateCard([index], wrapper, index));
+	}
+
+
 
 })(jQuery);

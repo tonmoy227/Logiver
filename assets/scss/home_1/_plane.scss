@@ -1,0 +1,36 @@
+.lg-plane-sec {
+	z-index: 1;
+	height: 722px;
+	margin-top: -150px;
+	@media #{$md,$sm,$xs,$xxs} {
+		height: 100%;
+		margin-top: 0;
+	}
+	.lg-plane-bg {
+		right: 0;
+		left: -6.5%;
+		bottom: 0;
+		z-index: -2;
+		width: 113%;
+		height: 325px;
+		margin: 0 auto;
+	}
+	.lg-plane-img {
+		margin-top: 80px;
+	}
+	.lg-cloud1 {
+		top: 0;
+		z-index: 2;
+		right: 0;
+	}
+	.lg-cloud2 {
+		top: 65px;
+		z-index: 2;
+		left: -80px;
+	}
+	.lg-cloud3 {
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+}
