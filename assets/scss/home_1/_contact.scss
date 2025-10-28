@@ -1,0 +1,243 @@
+.lg-contact-sec {
+	z-index: 1;
+	.lg-cont-bg {
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		bottom: -105px;
+		&:before {
+			top: 0;
+			left: 0;
+			width: 100%;
+			content: '';
+			height: 100%;
+			max-height: 512px;
+			position: absolute;
+			background: linear-gradient(180deg, #F1F3F5 10.58%, rgba(241, 243, 245, 0) 100%);
+		}
+	}
+}
+.lg-contact-content {
+	gap: 30px;
+	@media #{$md,$sm,$xs,$xxs} {
+		flex-wrap: wrap;
+	}
+}
+.lg-contact-text {
+	max-width: 600px;
+}
+.lg-contact-form {
+	z-index: 1;
+	width: 100%;
+	max-width: 685px;
+	padding: 55px 60px;
+	position: relative;
+	@media #{$lg,$md,$sm,$xs,$xxs} {
+		padding: 55px 20px;
+	}
+	@media #{$md,$sm,$xs,$xxs} {
+		max-width: 100%;
+	}
+	&:before,
+	&:after {
+		top: 0;
+		right: 0;
+		width: 100%;
+		z-index: -1;
+		content: '';
+		height: 100%;
+		border-radius: 20px;
+		position: absolute;
+		background: #FFFFFF33;
+		backdrop-filter: blur(15px);
+	}
+	&:before {
+		top: 10px;
+		right: -10px;
+	}
+	&:after {
+		background-color: var(--lg-prime-c2);
+	}
+	.form-title {
+		h3 {
+			font-size: 36px;
+			font-weight: 700;
+			letter-spacing: -1px;
+			padding-bottom: 8px;
+			text-transform: uppercase;
+			@media #{$xs,$xxs} {
+				font-size: 28px;
+			}
+		}
+		p {
+			color: #0F313A;
+		}
+	}
+	.lg-cnt-form {
+		border-radius: 12px;
+		padding: 12px 20px 4px;
+		border: 1px solid #0F313A3D;
+		.row {
+			--bs-gutter-x: 16px;
+		}
+		.b-title {
+			top: -26px;
+			left: -8px;
+			font-weight: 500;
+			padding: 0px 8px;
+			position: relative;
+			letter-spacing: -0.5px;
+			color: var(--lg-hd-color);
+			font-family: var(--lg-heading);
+			background-color: var(--lg-prime-c2);
+		}
+		input,select {
+			width: 100%;
+			height: 56px;
+			border: none;
+			padding-left: 20px;
+			border-radius: 8px;
+			margin-bottom: 16px;
+			background-color: #fff;
+			color: rgba(15, 49, 58, .48);
+			&:placeholder {
+				color: rgba(15, 49, 58, .48);
+			}
+		}
+		.lg-cnt-select {
+			&:before {
+				top: 15px;
+				right: 15px; 
+				font-size: 16px;
+				content: '\f107';
+				font-weight: 900;
+				position: absolute;
+				font-family: 'Font Awesome 5 free';
+			}
+		}
+		select {
+			appearance: none;
+		}
+	}
+	button {
+		padding: 0;
+		border: none;
+		display: flex;
+		font-family: var(--lg-heading);
+		background-color: transparent;
+		span {
+			color: #fff;
+			line-height: 1;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 18px 24px;
+			border-radius: 10px;
+			letter-spacing: .5px;
+			background-color: var(--lg-prime-c);
+		}
+		i {
+			width: 52px;
+			height: 52px;
+			display: flex;
+			align-items: center;
+			border-radius: 10px;
+			justify-content: center;
+			background-color: var(--lg-prime-c);
+		}
+	}
+	.ft-product-mesurment-checkbox label {
+		cursor: pointer;
+		position: relative;
+		margin-right: 25px;
+	}
+	.ft-product-mesurment-checkbox label .slug {
+		font-size: 16px;
+		margin-left: 8px;
+		font-weight: 500;
+		color: var(--lg-hd-color);
+	}
+	.ft-product-mesurment-checkbox .checkmark-circle {
+		top: 3px;
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}
+	.ft-product-mesurment-checkbox .checkmark-circle:before {
+		top: 1px;
+		left: 0px;
+		width: 20px;
+		content: "";
+		height: 20px;
+		position: absolute;
+		border-radius: 4px;
+		border: 2px solid #fff;
+	}
+	.ft-product-mesurment-checkbox .checkmark-circle:after {
+		left: 5px;
+		top: 6px;
+		width: 10px;
+		content: "";
+		height: 10px;
+		display: none;
+		position: absolute;
+		border-radius: 100%;
+		background-color: #fff;
+	}
+	.ft-product-mesurment-checkbox .condition {
+		display: none;
+	}
+	.ft-product-mesurment-checkbox .condition:checked ~ .checkmark-circle:after {
+		display: block;
+	}
+	.ft-product-mesurment-checkbox .condition:checked ~ .checkmark-circle:before {
+		border: 2px solid #fff;
+	}
+}
+
+.lg-cnt-range {
+	span {
+		color: #fff;
+		display: block;
+		font-size: 16px;
+		font-weight: 500;
+		color: var(--lg-hd-color);
+	}
+	#slider-range {
+		height: 4px;
+		width: 100%;
+		border:  none;
+		border-radius: 30px;
+		background-color: rgba(15, 49, 58, .15);
+		.ui-widget-header {
+			opacity: 1;
+			border-radius: 30px;
+			background-color: var(--lg-hd-color);
+		}
+		.ui-slider-handle {
+			top: -5px;
+			width: 5px;
+			height: 14px;
+			margin-left: 0;
+			cursor: pointer;
+			margin-bottom: 0;
+			border-radius: 30px;
+			background-color: var(--lg-hd-color);
+			border: none;
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+	.range-value {
+		input {
+			width: 100px;
+			border:  none;
+			font-size: 16px;
+			font-weight: 500;
+			padding-left: 15px;
+			color: var(--lg-hd-color);
+			background-color: transparent;
+		}
+	}
+}

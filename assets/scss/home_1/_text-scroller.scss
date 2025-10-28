@@ -1,4 +1,21 @@
+.lg-text-scrol1-bg {
+	background-color: var(--lg-prime-c2);
+}
+.lg-text-scrol2-bg {
+	width: 110%;
+	margin-left: -40px;
+	margin-top: -42px;
+	transform: rotate(-4.5deg);
+	background-color: var(--lg-hd-color);
+	.lg-text-scrol1 {
+		h2 {
+			color: #fff;
+		}
+	}
+}
 .lg-text-scrol1 {
+	display: flow-root;
+	padding: 28px 0px 10px;
 	h2 {
 		font-size: 48px;
 		font-weight: 800;
@@ -6,6 +23,8 @@
 		color: var(--lg-hd-color);
 	}
 	i {
-		margin: 0px 15px;
+		top: -15px;
+		margin: 0px 30px;
+		position: relative;
 	}
 }
