@@ -81,9 +81,12 @@
 }
 
 .lg-service-item {
+	z-index: 1;
 	margin: 0 auto;
 	max-width: 524px;
 	margin-top: -165px;
+	position: relative;
+	transition: all 500ms ease-in-out;
 	@media #{$lg,$md,$sm,$xs,$xxs} {
 		margin-top: 0;
 		margin-bottom: 30px;
@@ -124,5 +127,8 @@
 		width: 173px;
 		overflow: hidden;
 		border-radius: 8px;
+	}
+	&:hover {
+		z-index: 3;
 	}
 }

@@ -57,6 +57,11 @@
 				border-radius: 12px;
 				background-color: #fff;
 				color: var(--lg-prime-c);
+				transition: all 500ms ease-in-out;
+				&:hover {
+					color: #000;
+					background-color: var(--lg-prime-c2);
+				}
 			}
 		}
 	}
@@ -229,7 +234,7 @@
 		top: 50%;
 		left: 6%;
 		right: 0;
-		width: 60%;
+		width: 0%;
 		z-index: -1;
 		height: 1px;
 		content: "";
@@ -239,8 +244,15 @@
 		background-color: #F6F9FB;
 		-webkit-transform: translateY(-50%);
 		transform: translateY(-50%);
+		transition: all 1500ms ease-in-out;
 		@media #{$xl,$lg,$md,$sm,$xs,$xxs} {
 			display: none;
+		}
+	}
+	&:is(.active) {
+		&:before {
+			width: 60%;
+			transition-delay: 300ms;
 		}
 	}
 	p {

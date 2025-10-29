@@ -8,11 +8,17 @@
 		z-index: -1;
 		-webkit-mask-image: url(../img/bg/wc-mask.svg);
 		mask-image: url(../img/bg/wc-mask.svg);
+		clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+		transition: all 1500ms ease-in-out;
 		@media #{$lg} {
 			right: -10%;
 		}
 		@media #{$md,$sm,$xs,$xxs} {
 			display: none;
+		}
+		&:is(.active) {
+			transition-delay: 1500ms;
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 		}
 	}
 }
@@ -35,12 +41,19 @@
 			top: 50%;
 			left: -50%;
 			z-index: -1;
-			width: 150%;
+			width: 0%;
 			height: 1px;
 			content: '';
 			position: absolute;
 			transform: translateY(-50%);
+			transition: all 1500ms ease-in-out;
 			background-color: rgba(255, 255, 255, .24);
+		}
+		&:is(.active) {
+			&:before {
+				width: 150%;
+				transition-delay: 500ms;
+			}
 		}
 	}
 }
@@ -91,6 +104,7 @@
 		z-index: -1;
 		border-radius: 10px;
 		position: absolute;
+		transition: all 300ms ease-in-out;
 		background-color: var(--lg-prime-c2);
 		@media #{$sm,$xs,$xxs} {
 			left: 0;

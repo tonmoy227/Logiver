@@ -14,6 +14,7 @@
   	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
   	<link rel="stylesheet" href="assets/css/fontawesome.css">
   	<link rel="stylesheet" href="assets/css/animate.css">
+  	<link rel="stylesheet" href="assets/css/odometer.min.css">
   	<link rel="stylesheet" href="assets/css/swiper.min.css">
   	<link rel="stylesheet" href="assets/css/jquery-ui.css"> 
   	<link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -21,8 +22,8 @@
   </head>
   <body class="home-1">
   	<div id="preloader">
-  		<div class="preloader-logo">
-  			<a href="#"><img src="assets/img/logo/logo-black.svg" alt=""></a>
+  		<div class="preloader-logo d-flex justify-content-center align-items-center">
+  			<a href="#"><img src="assets/img/loader.svg" alt=""></a>
   		</div>
   	</div>
 <!-- Start of Header section
@@ -124,7 +125,7 @@
 						</div>
 					</div>
 					<a class="cta_btn" href="#">Request a Quote</a>
-					<div class="offcanvas-trigger agt-menu-button">
+					<div class="offcanvas-trigger navSidebar-button">
 						<button>
 							<span></span>
 							<span></span>
@@ -148,6 +149,161 @@
 			</div>
 		</div>
 	</header>
+	<!-- Mobile Menu -->
+	<div class="mobile_menu lenis lenis-smooth position-relative">
+		<div class="mobile_menu_wrap">
+			<div class="mobile_menu_overlay open_mobile_menu"></div>
+			<div class="mobile_menu_content">
+				<div class="mobile_menu_close open_mobile_menu">
+					<i class="fas fa-times"></i>
+				</div>
+				<div class="m-brand-logo">
+					<img src="assets/img/logo/logo1.svg" alt="">
+				</div>
+				<div class="mobile-search-bar position-relative">
+					<form action="#">
+						<input type="text" name="search" placeholder="Keywords">
+						<button><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<nav class="mobile-main-navigation  clearfix ul-li">
+					<ul id="m-main-nav" class="nav navbar-nav clearfix">
+						<li class="dropdown active">
+							<a href="!#">Home</a>
+							<ul class="dropdown-menu clearfix">
+								<li><a class="active" href="index.html">Home Page One</a></li>
+								<li><a href="index-2.html">Home Page Two</a></li>
+								<li><a href="index-3.html">Home Page Three</a></li>
+								<li><a href="index-4.html">Home Page Four</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About Us </a></li>
+						<li class="dropdown">
+							<a href="!#">Services</a>
+							<ul class="dropdown-menu clearfix">
+								<li><a href="service.html">Services Page One</a></li>
+								<li><a href="service.html">Services Page Two</a></li>
+								<li class="dropdown">
+									<a href="service-single.html">Services Details</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a href="service-single.html">Construction </a></li>
+										<li><a href="service-single.html">Architect Design</a></li>
+										<li><a href="service-single.html">Interior Design</a></li>
+										<li><a href="service-single.html">3D Animation</a></li>
+										<li><a href="service-single.html">House Renovation</a></li>
+										<li><a href="service-single.html">Ideas & Inspiration</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="!#">Pages </a>
+							<ul class="dropdown-menu clearfix"> 
+								<li><a href="price.html">Pricing Page </a></li>
+								<li class="dropdown">
+									<a href="#">Project Page</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a href="project-1.html">Project Page One</a></li>
+										<li><a href="project-2.html">Project Page Two</a></li>
+										<li><a href="project-single.html">Project Details</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact Page</a></li>
+								<li class="dropdown">
+									<a href="service-single.html">Team Page</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a href="team-1.html">Team Page One</a></li>
+										<li><a href="team-2.html">Team Page Two</a></li>
+										<li><a href="team-single.html">Team Details</a></li>
+									</ul>
+								</li>
+								<li><a href="work-process.html">Work Process Page</a></li>
+								<li><a href="coming-soon.html">Coming Soon Page</a></li>
+								<li><a href="404.html">404 Page</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="service-single.html">Blog</a>
+							<ul class="dropdown-menu clearfix">
+								<li><a href="blog-1.html">Blog Grid</a></li>
+								<li><a href="blog-2.html">Blog List</a></li>
+								<li><a href="blog-single.html">Blog Details</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="ptx-mobile-header-social text-center">
+					<a href="#"> <i class="fab fa-instagram"></i></a>
+					<a href="#"> <i class="fab fa-linkedin-in"></i></a>
+					<a href="#"> <i class="fab fa-facebook"></i></a>
+					<a href="#"> <i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+		<!-- /Mobile-Menu -->
+	</div>
+	<!-- Sidebar sidebar Item -->
+	<div class="xs-sidebar-group info-group">
+		<div class="xs-overlay xs-bg-black">
+			<div class="row loader-area">
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+				<div class="col-3 preloader-wrap">
+					<div class="loader-bg"></div>
+				</div>
+			</div>
+		</div>
+		<div class="xs-sidebar-widget">
+			<div class="sidebar-widget-container">
+				<div class="widget-heading">
+					<a href="#" class="close-side-widget close-side-widget">
+						X
+					</a>
+				</div>
+				<div class="sidebar-textwidget">
+
+					<div class="sidebar-info-contents headline pera-content">
+						<div class="content-inner headline-2">
+							<div class="logo">
+								<a href="index.html"><img src="assets/img/logo/logo1.svg" alt=""></a>
+							</div>
+							<div class="content-box">
+								<h5>About Us</h5>
+								<p class="text">The argument in favor of using filler text goes something like this: If you use real content in the Consulting Process, anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p>
+							</div>
+							<div class="gallery-box ul-li">
+								<h5>Gallery</h5>
+								<ul class="zoom-gallery">
+									<li><a href="assets/img/gallery/gal1.jpg" data-source="assets/img/gallery/gal1.jpg"><img src="assets/img/gallery/gal1.jpg" alt=""></a></li>
+									<li><a href="assets/img/gallery/gal2.jpg" data-source="assets/img/gallery/gal2.jpg"><img src="assets/img/gallery/gal2.jpg" alt=""></a></li>
+									<li><a href="assets/img/gallery/gal3.jpg" data-source="assets/img/gallery/gal3.jpg"><img src="assets/img/gallery/gal3.jpg" alt=""></a></li>
+									<li><a href="assets/img/gallery/gal4.jpg" data-source="assets/img/gallery/gal4.jpg"><img src="assets/img/gallery/gal4.jpg" alt=""></a></li>
+									<li><a href="assets/img/gallery/gal5.jpg" data-source="assets/img/gallery/gal5.jpg"><img src="assets/img/gallery/gal5.jpg" alt=""></a></li>
+									<li><a href="assets/img/gallery/gal2.jpg" data-source="assets/img/gallery/gal2.jpg"><img src="assets/img/gallery/gal2.jpg" alt=""></a></li>
+								</ul>
+							</div>
+							<div class="content-box">
+								<h5>Social Account</h5>
+								<ul class="social-box">
+									<li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
+									<li><a href="https://www.twitter.com/" class="fab fa-twitter"></a></li>
+									<li><a href="https://dribbble.com/" class="fab fa-dribbble"></a></li>
+									<li><a href="https://www.linkedin.com/" class="fab fa-linkedin"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 <!-- Start of Header section
 	============================================= -->
 
@@ -158,7 +314,7 @@
 			<img src="assets/img/hero/hero.jpg" alt="">
 		</div>
 		<div class="lg-bg-text text-uppercase position-absolute headline">
-			<h2>Logiver</h2>
+			<h2 class="lg_hero_title hero_title_3">Logiver</h2>
 		</div>
 		<div class="lg-hero-img2 img-cover position-absolute">
 			<img src="assets/img/hero/hero2.png" alt="">
@@ -166,9 +322,9 @@
 		<div class="container">
 			<div class="lg-hero-content">
 				<div class="lg-hero-text headline">
-					<h1 class="hero_title text-uppercase">Reliable Global Shipping Solutions.</h1>
+					<h1 class="hero_title lg_hero_title hero_title_2 text-uppercase">Reliable Global Shipping Solutions.</h1>
 				</div>
-				<div class="desc-text pera-content">
+				<div class="desc-text lg-text pera-content">
 					<p>We provide efficient, secure, and timely transportation services worldwide, ensuring smooth logistics for every shipment.</p>
 					<div class="lg-btn">
 						<a href="#">
@@ -245,21 +401,25 @@
 	============================================= -->
 	<section id="lg-about" class="lg-about-sec over-hidden position-relative pt-135 pb-225">
 		<span class="lg-ab1-img position-absolute"><img src="assets/img/bg/map.png" alt=""></span>
-		<span class="lg-ab1-img2 position-absolute"><img src="assets/img/about/ab1.png" alt=""></span>
+		<span class="lg-ab1-img2 position-absolute">
+			<div class="item-img">
+				<img src="assets/img/about/ab1.png" alt="">
+			</div>
+		</span>
 		<div class="container">
 			<div class="lg-about-title">
 				<div class="lg-sec-title flex-wrap headline d-flex justify-content-between">
 					<div class="subtitle">
 						<span>We're Logiver Transportation</span>
 					</div>
-					<h2 class="sec_title text-uppercase">
+					<h2 class="sec_title lg-itm-title lg-itm-anim text-uppercase">
 						Delivering Efficient, Reliable, and Global Transportation & Logistics Solutions to Streamline Your Business Operations and Drive Growth.
 					</h2>
 				</div>
 			</div>
 			<div class="lg-about-feature mt-45 d-flex justify-content-end">
 				<div class="lg-about-feature-wrapper">
-					<div class="lg-about-ft-item d-flex align-items-center">
+					<div class="lg-about-ft-item top_view_3 d-flex align-items-center">
 						<div class="item-icon d-flex align-items-center justify-content-center">
 							<img src="assets/img/icon/ic4.png" alt="">
 						</div>
@@ -267,7 +427,7 @@
 							Real-time tracking and monitoring of shipments for enhanced visibility and efficiency.
 						</div>
 					</div>
-					<div class="lg-about-ft-item d-flex align-items-center">
+					<div class="lg-about-ft-item top_view_3 d-flex align-items-center">
 						<div class="item-icon d-flex align-items-center justify-content-center">
 							<img src="assets/img/icon/ic5.png" alt="">
 						</div>
@@ -300,7 +460,7 @@
 			<div class="lg-counter-item headline pera-content">
 				<h3>Year’s of Experience</h3>
 				<div class="item-count d-flex align-items-center justify-content-between">
-					<h4><span>24</span><sub>+</sub></h4>
+					<h4><span class="odometer" data-count="24">00</span><sub>+</sub></h4>
 					<p>Decades of trusted 
 					logistics industry expertise.</p>
 				</div>
@@ -326,15 +486,15 @@
 					</div>
 				</div>
 				<div class="item-count d-flex align-items-center justify-content-between">
-					<h4><span>97</span><sub>%</sub></h4>
+					<h4><span class="odometer" data-count="97">00</span><sub>%</sub></h4>
 					<p>Trusted by 
 					clients worldwide daily.</p>
 				</div>
 			</div>
-			<div class="lg-counter-item headline pera-content">
+			<div class="lg-counter-item headline pera-content"> 
 				<h3>Expert Team Member</h3>
 				<div class="item-count d-flex align-items-center justify-content-between">
-					<h4><span>32</span><sub>+</sub></h4>
+					<h4><span class="odometer" data-count="32">00</span><sub>+</sub></h4>
 					<p>Skilled professionals
 					ensuring excellence.</p>
 				</div>
@@ -342,7 +502,7 @@
 			<div class="lg-counter-item headline pera-content">
 				<h3>Project Complete</h3>
 				<div class="item-count d-flex align-items-center justify-content-between">
-					<h4><span>24</span><sub>k</sub></h4>
+					<h4><span class="odometer" data-count="12">00</span><sub>K</sub></h4>
 					<p>Successfully delivered
 					global projects.</p>
 				</div>
@@ -354,12 +514,12 @@
 
 <!-- Start of Service section
 	============================================= -->
-	<section id="lg-service" class="lg-service-sec">
-		<div class="lg-service-wrapper pt-135 pb-135 position-relative">
-			<span class="lg-ser-img position-absolute"><img src="assets/img/about/sb.jpg" alt=""></span>
-			<span class="lg-ser-img2 position-absolute"><img src="assets/img/about/sb2.png" alt=""></span>
-			<span class="lg-ser-bg2 position-absolute"><img src="assets/img/bg/ser-bg2.png" alt=""></span>
-			<span class="lg-ser-shape position-absolute"><img src="assets/img/shape/shape1.png" alt=""></span>
+	<section id="lg-service" class="lg-service-sec over-hidden">
+		<div class="lg-service-wrapper over-hidden pt-135 pb-135 position-relative">
+			<span class="lg-ser-img img-parallax position-absolute"><img src="assets/img/about/sb.jpg" alt=""></span>
+			<span class="lg-ser-img2 left_view position-absolute"><img src="assets/img/about/sb2.png" alt=""></span>
+			<span class="lg-ser-bg2 top_view_3 position-absolute"><img src="assets/img/bg/ser-bg2.png" alt=""></span>
+			<span class="lg-ser-shape right_view position-absolute"><img src="assets/img/shape/shape1.png" alt=""></span>
 			<div class="container">
 				<div class="lg-service-top-wrap d-flex justify-content-end">
 					<div class="lg-service-top flex-wrap d-flex justify-content-end">
@@ -367,7 +527,7 @@
 							<div class="subtitle">
 								<span>Logiver Services</span>
 							</div>
-							<h2 class="sec_title text-uppercase">
+							<h2 class="sec_title lg-itm-title lg-itm-anim text-uppercase">
 								Delivering Efficient, Reliable, and Global Transportation
 							</h2>
 							<p>We provide efficient, secure, and timely transportation services worldwide, ensuring smooth logistics for every shipment.</p>
@@ -465,14 +625,14 @@
 <!-- Start of Price section
 	============================================= -->
 	<section id="lg-price" class="lg-price-sec pt-135 pb-135 position-relative">
-		<span class="lg-price-img position-absolute"><img src="assets/img/about/pr1.png" alt=""></span>
+		<span class="lg-price-img right_view position-absolute"><img src="assets/img/about/pr1.png" alt=""></span>
 		<div class="container">
 			<div class="lg-price-top d-flex justify-content-between align-items-end">
 				<div class="lg-sec-title  pera-content headline">
 					<div class="subtitle">
 						<span>Logiver Pricing Plan</span>
 					</div>
-					<h2 class="sec_title text-uppercase">
+					<h2 class="sec_title lg-itm-title lg-itm-anim text-uppercase">
 						Affordable Transportation & Logistics Plans Tailored for Every Business Need.
 					</h2>
 				</div>
@@ -647,7 +807,7 @@
 		<span class="lg-cloud2 position-absolute"><img src="assets/img/shape/cloud2.png" alt=""></span>
 		<span class="lg-cloud3 position-absolute"><img src="assets/img/shape/cloud3.png" alt=""></span>
 		<div class="lg-plane-bg img-cover position-absolute"><img src="assets/img/bg/plan-bg.png" alt=""></div>
-		<div class="lg-plane-img text-center">
+		<div class="lg-plane-img plane_land_5 text-center">
 			<img src="assets/img/about/plane.png" alt="">
 		</div>
 	</section>
@@ -658,18 +818,18 @@
 <!-- Start of Why choose section
 	============================================= -->
 	<section id="lg-wc" class="lg-wc-sec pt-140 over-hidden pb-90  position-relative">
-		<div class="lg-wc-img img-cover position-absolute"><img src="assets/img/about/wc1.jpg" alt=""></div>
+		<div class="lg-wc-img img-cover txt_item_active position-absolute"><img src="assets/img/about/wc1.jpg" alt=""></div>
 		<div class="container">
 			<div class="lg-wc-content">
 				<div class="lg-sec-title  pera-content headline">
 					<div class="subtitle">
 						<span>Why choose Logiver</span>
 					</div>
-					<h2 class="sec_title text-uppercase">
+					<h2 class="sec_title lg-itm-title lg-itm-anim text-uppercase">
 						Why Choose Logiver for Reliable Global Transportation & Logistics Solutions.
 					</h2>
 				</div>
-				<div class="lg-wc-btn  mt-30 d-flex justify-content-end position-relative">
+				<div class="lg-wc-btn txt_item_active  mt-30 d-flex justify-content-end position-relative">
 					<div class="lg-btn">
 						<a href="#">
 							<span>Discover Now</span>
@@ -823,7 +983,7 @@
 					<div class="subtitle">
 						<span>Logiver Case Studies</span>
 					</div>
-					<h2 class="sec_title text-uppercase">
+					<h2 class="sec_title lg-itm-title lg-itm-anim text-uppercase">
 						Our Successful Global Transportation and Logistics Projects Showcase.
 					</h2>
 				</div>
@@ -965,7 +1125,7 @@
 			<div class="subtitle">
 				<span>Logiver Testimonials</span>
 			</div>
-			<h2 class="sec_title text-uppercase">
+			<h2 class="sec_title lg-itm-title lg-itm-anim text-uppercase">
 				What Our Clients Say About Logiver logistics Services.
 			</h2>
 		</div>
@@ -1185,7 +1345,7 @@
 <!-- Start of Contact section
 	============================================= -->
 	<section id="lg-contact" class="lg-contact-sec pb-225 over-hidden position-relative">
-		<div class="lg-cont-bg position-absolute img-cover"><img src="assets/img/bg/cn1.jpg" alt=""></div>
+		<div class="lg-cont-bg img-parallax position-absolute img-cover"><img src="assets/img/bg/cn1.jpg" alt=""></div>
 		<div class="container">
 			<div class="lg-contact-content d-flex justify-content-between">
 				<div class="lg-contact-text">
@@ -1193,7 +1353,7 @@
 						<div class="subtitle">
 							<span>Request For Service</span>
 						</div>
-						<h2 class="sec_title text-uppercase">
+						<h2 class="sec_title lg-itm-title lg-itm-anim text-uppercase">
 							Request unique services that set us apart.
 						</h2>
 					</div>
@@ -1320,7 +1480,7 @@
 					<div class="subtitle">
 						<span>Logiver Blog & News</span>
 					</div>
-					<h2 class="sec_title text-uppercase">
+					<h2 class="sec_title lg-itm-title lg-itm-anim text-uppercase">
 						Latest trends in logistics & transportation.
 					</h2>
 				</div>
@@ -1395,8 +1555,8 @@
 	============================================= -->
 	<footer id="lg-footer" class="lg-footer-sec over-hidden">
 		<div class="lg-newslatter-wrap position-relative over-hidden">
-			<span class="nws-bg img-cover position-absolute"><img src="assets/img/bg/nw-bg.jpg" alt=""></span>
-			<span class="nws-plane position-absolute"><img src="assets/img/about/plane2.png" alt=""></span>
+			<span class="nws-bg img-parallax img-cover position-absolute"><img src="assets/img/bg/nw-bg.jpg" alt=""></span>
+			<span class="nws-plane plane_land_6 position-absolute"><img src="assets/img/about/plane2.png" alt=""></span>
 			<div class="container">
 				<div class="lg-news-form headline d-flex align-items-center">
 					<h3 class="text-uppercase">Stay Updated: Subscribe for the Latest Logistics News.</h3>
@@ -1516,7 +1676,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="lg-ftr-copyright align-items-center pera-content d-flex justify-content-between">
+				<div class="lg-ftr-copyright txt_item_active align-items-center pera-content d-flex justify-content-between">
 					<p>©2025, <a href="#">Logiver</a> All Rights Reserved.</p>
 					<div class="lg-scroll-top">
 						<a class="lg-s-top" href="#"><img src="assets/img/icon/ic18.svg" alt=""></a>
@@ -1548,6 +1708,7 @@
 	<script src="assets/js/appear.js"></script>
 	<script src="assets/js/gsap.min.js"></script>
 	<script src="assets/js/knob.js"></script>
+	<script src="assets/js/odometer.min.js"></script>
 	<script src="assets/js/jquery-ui.min.js"></script>
 	<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
 	<script src="assets/js/jquery.counterup.min.js"></script>

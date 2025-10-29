@@ -1,3 +1,13 @@
+@keyframes spin {
+	from {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	to {
+		-webkit-transform: rotateY(-360deg);
+		transform: rotateY(-360deg);
+	}
+}
 .lg-feat-sec {
 	border-bottom: 1px solid #E0E2E4;
 	@media #{$md,$sm,$xs,$xxs} {
@@ -25,11 +35,21 @@
 				font-weight: 500;
 				line-height: 1.167;
 				letter-spacing: -1px;
+				&:hover {
+					color: var(--lg-prime-c);
+				}
 			}
 		}
 	}
 	p {
 		max-width: 380px;
+	}
+	&:hover {
+		.item-icon-title {
+			.item-icon {
+				animation: 1s spin infinite;
+			}
+		}
 	}
 }
 .col-lg-4 {

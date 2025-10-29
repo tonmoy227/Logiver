@@ -20,7 +20,7 @@
 		right: 0;
 		width: 100%;
 		z-index: -2;
-		opacity: .32;
+		opacity: .25;
 		margin: 0 auto;
 		text-align: center;
 		transform: translateY(-50%);
@@ -31,11 +31,17 @@
 			font-size: 488px;
 			font-weight: 700;
 			letter-spacing: -20px;
-			background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
 			@media #{$sm,$xs,$xxs} {
 				font-size: 300px;
+			}
+			div {
+				div {
+					div {
+						background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+				}
 			}
 		}
 	}

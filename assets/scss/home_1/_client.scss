@@ -43,9 +43,13 @@
 		display: flex;
 		height: 132px;
 		align-items: center;
+		cursor: pointer;
 		justify-content: center;
 		border: 1px solid rgba(15, 49, 58, 0.16);
 		position: relative;
+		img {
+			transition: all 500ms ease-in-out;
+		}
 		@media #{$lg,$md,$sm,$xs,$xxs} {
 			width: 100%;
 		}
@@ -64,6 +68,11 @@
 		&:after {
 			right: 9px;
 			left: auto;
+		}
+	}
+	&:hover {
+		img {
+			transform: scale(1.1);
 		}
 	}
 }

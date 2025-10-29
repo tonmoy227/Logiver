@@ -25,3 +25,18 @@ $sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
 $xs:'only screen and (min-width: 481px) and (max-width: 575px)';
 $xxs:'(max-width: 480px)';
 $xxxs:'(max-width: 360px)';
+
+@keyframes slideInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(500px);
+		-ms-transform: translateY(500px);
+		transform: translateY(500px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+} 

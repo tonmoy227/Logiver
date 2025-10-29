@@ -108,15 +108,8 @@ body::-webkit-scrollbar-thumb {
 	overflow: visible;
 	background-color: #fff;
 	.preloader-logo {
-		left: 0;
-		top: 50%;
-		right: 0;
-		text-align: center;
-		position: absolute;
-		transform: translateY(-50%);
-		img {
-			animation: TXTImgIn 1500ms ease-in-out infinite;
-		}
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -261,6 +254,7 @@ a {
 }
 
 .lg-btn {
+	display: inline-block;
 	a {
 		display: flex;
 		font-family: var(--lg-heading);
@@ -282,6 +276,16 @@ a {
 			border-radius: 10px;
 			justify-content: center;
 			background-color: var(--lg-prime-c);
+			transition: all 300ms ease-in-out;
+		}
+		&:hover {
+			span {
+				border-radius: 40px;
+			}
+			i {
+				border-radius: 100%;
+				transform: translateX(5px) rotate(45deg);
+			}
 		}
 	}
 }

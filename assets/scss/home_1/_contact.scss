@@ -7,12 +7,12 @@
 		height: 100%;
 		bottom: -105px;
 		&:before {
-			top: 0;
 			left: 0;
+			top: -105px;
 			width: 100%;
+			z-index: 1;
 			content: '';
 			height: 100%;
-			max-height: 512px;
 			position: absolute;
 			background: linear-gradient(180deg, #F1F3F5 10.58%, rgba(241, 243, 245, 0) 100%);
 		}
@@ -134,6 +134,7 @@
 			padding: 18px 24px;
 			border-radius: 10px;
 			letter-spacing: .5px;
+			transition: all 500ms ease-in-out;
 			background-color: var(--lg-prime-c);
 		}
 		i {
@@ -143,7 +144,17 @@
 			align-items: center;
 			border-radius: 10px;
 			justify-content: center;
+			transition: all 500ms ease-in-out;
 			background-color: var(--lg-prime-c);
+		}
+		&:hover {
+			span {
+				border-radius: 40px;
+			}
+			i {
+				border-radius: 100%;
+				transform: translateX(5px) rotate(45deg);
+			}
 		}
 	}
 	.ft-product-mesurment-checkbox label {

@@ -48,6 +48,7 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				transition: all 500ms ease-in-out;
 			}
 		}
 	}
@@ -66,6 +67,9 @@
 			font-weight: 700;
 			padding-bottom: 5px;
 			letter-spacing: -1px;
+			&:hover {
+				color: var(--lg-prime-c);
+			}
 		}
 		.item-tag {
 			a {
@@ -75,6 +79,13 @@
 				padding: 10px 20px;
 				border-radius: 6px;
 				background-color: #F1F3F5;
+			}
+		}
+	}
+	&:hover {
+		.item-img {
+			img {
+				mix-blend-mode: luminosity;
 			}
 		}
 	}

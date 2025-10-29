@@ -1,3 +1,18 @@
+@keyframes an-smoke-2 {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(0) rotate(0.01deg);
+		transform: translateY(0) rotate(0.01deg);
+	}
+	50% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(10%, 0%) rotate(0.01deg);
+		transform: translate(10%, 0%) rotate(0.01deg);
+	}
+}
 .lg-plane-sec {
 	z-index: 1;
 	height: 722px;
@@ -22,15 +37,18 @@
 		top: 0;
 		z-index: 2;
 		right: 0;
+		animation: an-smoke-2 6s ease-in-out infinite;
 	}
 	.lg-cloud2 {
 		top: 65px;
 		z-index: 2;
 		left: -80px;
+		animation: an-smoke-2 6s ease-in-out infinite;
 	}
 	.lg-cloud3 {
 		right: 0;
 		bottom: 0;
 		z-index: -1;
+		animation: an-smoke-2 6s ease-in-out infinite;
 	}
 }
