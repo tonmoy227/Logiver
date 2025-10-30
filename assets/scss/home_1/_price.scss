@@ -91,6 +91,13 @@
 				background: linear-gradient(180deg, #F1F3F5 0%, #FFFFFF 100%);
 			}
 		}
+		.item-btn {
+			a {
+				color: #fff;
+				background-color: var(--lg-hd-color);
+				border: 1px solid var(--lg-hd-color);
+			}
+		}
 	}
 	.item-title {
 		margin-bottom: 30px;
@@ -103,6 +110,7 @@
 	}
 	.item-list-price {
 		z-index: 1;
+		overflow: hidden;
 		padding: 30px 24px;
 		position: relative;
 		border-radius: 11px;
@@ -144,15 +152,15 @@
 	}
 	.item-btn {
 		a {
-			color: #fff;
 			width: 100%;
 			font-size: 16px;
 			font-weight: 500;
 			padding: 12px 16px;
 			border-radius: 8px;
 			text-align: center;
+			color: var(--lg-hd-color);
 			font-family: var(--lg-heading);
-			background-color: var(--lg-hd-color);
+			border: 1px solid #0F313A33;
 			&:hover {
 				background-color: var(--lg-prime-c);
 			}

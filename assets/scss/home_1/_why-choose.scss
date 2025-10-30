@@ -123,6 +123,15 @@
 		.item-text {
 			color: #0F313A;
 		}
+		.item-icon {
+			i {
+				svg {
+					.line_1 {
+						fill: var(--lg-hd-color);
+					}
+				}
+			}
+		}
 	}
 	.item-icon-title {
 		gap: 24px;
@@ -131,6 +140,13 @@
 	.item-icon {
 		width: 52px;
 		height: 52px;
+		i {
+			svg {
+				.line_1 {
+					transition: all 500ms ease-in-out;
+				}
+			}
+		}
 	}
 	.item-title {
 		max-width: 165px;

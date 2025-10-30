@@ -586,13 +586,46 @@ Last change:    00/00/00
 		.from(el, { opacity: 0, scale: 1, x: "300"}, {opacity: 1, y: 0, duration: 1, immediateRender: false})
 	});
 
+	gsap.utils.toArray(' .sponsor_1').forEach((el, index) => { 
+		let tlcta = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 1.5,
+				start: "top 80%",
+				end: "top 30%",
+				toggleActions: "play none none reverse",
+				markers: false
+			}
+		})
+
+		tlcta
+		.set(el, {transformOrigin: 'center center'})
+		.from(el, { opacity: 1, scale: 1, x: "140"}, {opacity: 1, y: 0, duration: 1, immediateRender: false})
+	});
+	gsap.utils.toArray(' .sponsor_2').forEach((el, index) => { 
+		let tlcta = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 1.5,
+				start: "top 80%",
+				end: "top 30%",
+				toggleActions: "play none none reverse",
+				markers: false
+			}
+		})
+
+		tlcta
+		.set(el, {transformOrigin: 'center center'})
+		.from(el, { opacity: 1, scale: 1, x: "-140"}, {opacity: 1, y: 0, duration: 1, immediateRender: false})
+	});
+
 	gsap.utils.toArray(' .plane_land_5').forEach((el, index) => { 
 		let tlcta = gsap.timeline({
 			scrollTrigger: {
 				trigger: el,
 				scrub: 1.5,
-				end: "top -10%",
-				start: "top 50%",
+				end: "top 30%",
+				start: "top 80%",
 				toggleActions: "play none none reverse",
 				markers: false
 			}
@@ -600,7 +633,7 @@ Last change:    00/00/00
 
 		tlcta
 		.set(el, {transformOrigin: 'top'})
-		.from(el, { opacity: 0, scale: 0.2,  y: -150,}, {opacity: 1, y: 0, rotate: "0", duration: 1, immediateRender: false})
+		.from(el, { opacity: 0, scale: 0.2,  y: -70,}, {opacity: 1, y: 0, rotate: "0", duration: 1, immediateRender: false})
 	});
 
 

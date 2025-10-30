@@ -3310,8 +3310,8 @@ a:hover, a:focus {
 
 .lg-counter-item {
 				width: 25%;
-				padding: 35px;
 				border-radius: 14px;
+				padding: 35px 35px 30px;
 				background-color: #FFFFFF;
 				-webkit-transition: all 500ms ease-in-out;
 				transition: all 500ms ease-in-out;
@@ -3382,6 +3382,7 @@ a:hover, a:focus {
 				display: flex;
 				font-size: 64px;
 				font-weight: 500;
+				line-height: 1;
 				-webkit-box-align: center;
 				    -ms-flex-align: center;
 				        align-items: center;
@@ -3444,7 +3445,7 @@ a:hover, a:focus {
 .lg-service-wrapper .lg-ser-bg2 {
 				left: 0;
 				bottom: 0;
-				opacity: 0.4;
+				opacity: 0.75;
 }
 .lg-service-wrapper .lg-ser-bg2 img {
 				mix-blend-mode: luminosity;
@@ -3507,8 +3508,6 @@ a:hover, a:focus {
 				max-width: 524px;
 				margin-top: -165px;
 				position: relative;
-				-webkit-transition: all 500ms ease-in-out;
-				transition: all 500ms ease-in-out;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 481px) and (max-width: 575px), (max-width: 480px) {
 				.lg-service-item {
@@ -3518,6 +3517,7 @@ a:hover, a:focus {
 }
 .lg-service-item .inner-item {
 				gap: 40px;
+				z-index: 1;
 				overflow: hidden;
 				position: relative;
 				border-radius: 16px;
@@ -3525,6 +3525,19 @@ a:hover, a:focus {
 				padding: 14px 14px 14px 35px;
 				-webkit-box-shadow: -16px -16px 50px 0px rgba(0, 0, 0, 0.2509803922);
 				        box-shadow: -16px -16px 50px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.lg-service-item .inner-item:before {
+				top: 0;
+				left: 0;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				content: "";
+				position: absolute;
+				background-color: #0b2227;
+				-webkit-transition: all 500ms ease-in-out;
+				transition: all 500ms ease-in-out;
 }
 .lg-service-item:nth-child(1) {
 				margin-top: 0;
@@ -3556,6 +3569,9 @@ a:hover, a:focus {
 }
 .lg-service-item:hover {
 				z-index: 3;
+}
+.lg-service-item:hover .inner-item:before {
+				opacity: 1;
 }
 
 /*---------------------------------------------------- */
@@ -3670,6 +3686,11 @@ a:hover, a:focus {
 				background: -webkit-gradient(linear, left top, left bottom, from(#F1F3F5), to(#FFFFFF));
 				background: linear-gradient(180deg, #F1F3F5 0%, #FFFFFF 100%);
 }
+.lg-price-item:is(.popular) .item-btn a {
+				color: #fff;
+				background-color: var(--lg-hd-color);
+				border: 1px solid var(--lg-hd-color);
+}
 .lg-price-item .item-title {
 				margin-bottom: 30px;
 }
@@ -3681,6 +3702,7 @@ a:hover, a:focus {
 }
 .lg-price-item .item-list-price {
 				z-index: 1;
+				overflow: hidden;
 				padding: 30px 24px;
 				position: relative;
 				border-radius: 11px;
@@ -3724,15 +3746,15 @@ a:hover, a:focus {
 				margin-right: 7px;
 }
 .lg-price-item .item-btn a {
-				color: #fff;
 				width: 100%;
 				font-size: 16px;
 				font-weight: 500;
 				padding: 12px 16px;
 				border-radius: 8px;
 				text-align: center;
+				color: var(--lg-hd-color);
 				font-family: var(--lg-heading);
-				background-color: var(--lg-hd-color);
+				border: 1px solid rgba(15, 49, 58, 0.2);
 }
 .lg-price-item .item-btn a:hover {
 				background-color: var(--lg-prime-c);
@@ -3955,6 +3977,9 @@ a:hover, a:focus {
 .lg-wc-ft-item:is(.active) .item-text {
 				color: #0F313A;
 }
+.lg-wc-ft-item:is(.active) .item-icon i svg .line_1 {
+				fill: var(--lg-hd-color);
+}
 .lg-wc-ft-item .item-icon-title {
 				gap: 24px;
 				margin-bottom: 16px;
@@ -3962,6 +3987,10 @@ a:hover, a:focus {
 .lg-wc-ft-item .item-icon {
 				width: 52px;
 				height: 52px;
+}
+.lg-wc-ft-item .item-icon i svg .line_1 {
+				-webkit-transition: all 500ms ease-in-out;
+				transition: all 500ms ease-in-out;
 }
 .lg-wc-ft-item .item-title {
 				max-width: 165px;
@@ -5184,6 +5213,7 @@ a:hover, a:focus {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
+				color: rgba(255, 255, 255, 0.4);
 				-webkit-box-align: center;
 				    -ms-flex-align: center;
 				        align-items: center;
@@ -5208,7 +5238,7 @@ a:hover, a:focus {
 				-webkit-box-align: center;
 				    -ms-flex-align: center;
 				        align-items: center;
-				border-radius: 40%;
+				border-radius: 45%;
 				-webkit-box-pack: center;
 				    -ms-flex-pack: center;
 				        justify-content: center;
